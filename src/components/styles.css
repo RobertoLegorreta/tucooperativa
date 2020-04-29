@@ -1,0 +1,296 @@
+/* ------------- LOGIN PAGE -------------- */
+
+#loginForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 100%; 
+  height: 100vh;
+}
+
+#loginForm div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#loginForm p{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* ------------- DASHBOARD PAGE -------------- */
+
+#dashboard{
+  display: flex; 
+  flex-direction: column;
+  height: 100vh; 
+}
+
+/* <Header> */
+
+#header{
+  width: 100%; 
+  height: 65px; 
+  background: white; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px; 
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+#header div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header > p {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0B7CFF;
+}
+
+#header > div > p{
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#header div > p:nth-child(1){
+  margin-right: 30px;
+}
+
+#header div > p:nth-child(2){
+  color: white; 
+  background: #404040; 
+  border-radius: 3px;
+  padding: 7px 13px;
+}
+
+/* <Navbar> */
+
+#navbar{
+  width: 320px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #F8F8F8;
+  padding: 20px 0px;
+}
+
+#mainData{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;;
+}
+
+#mainData figure{
+  width: 60px; 
+  height: 60px; 
+  margin-right: 20px;
+  border-radius: 100px;
+  background: white; 
+  cursor: pointer; 
+  flex-shrink: 0;
+}
+
+#mainData figure img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+#mainData > div > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mainData > div > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+}
+
+.division{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0; 
+}
+
+.division p{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.division div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.division figure{
+  width: 20px; 
+  height: 20px; 
+  margin: 10px 20px; 
+  cursor: pointer;
+}
+
+.collapse{
+  transform: rotate(180deg);
+}
+
+.rotate{
+  transform: rotate(180deg) !important;
+}
+
+.division figure img {
+  width: 100%; 
+  height: 100%;
+}
+
+#extraData p{
+  max-width: 100%;
+  word-wrap: break-word;
+  margin: 0 auto; 
+  padding: 5px 10%;
+  box-sizing: border-box; 
+}
+
+#extraData p:nth-child(odd){
+  background: white;
+}
+
+#myPeople{
+  width: 100%; 
+  text-align: center;
+  background: #0B7CFF; 
+  font-weight: 500;
+  padding: 15px 0; 
+  cursor: pointer;
+  color: white;
+}
+
+#tables p{
+  text-align: center;
+  max-width: 100%;
+  padding: 13px 10%;
+  box-sizing: border-box; 
+  color: #404040; 
+  cursor: pointer;
+  font-weight: 400;
+}
+
+#tables p:hover{
+  background: #404040 !important; 
+  color: white !important;
+}
+
+.tableSelected{
+  background: #404040 !important; 
+  color: white !important;
+}
+
+/* <Tree> */
+
+#tree{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#tree section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#tree > section > div{
+  width: 800px;
+  height: 120px; 
+  margin: 10px 0; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tree > section > div > div{
+  border: 1px solid gray;
+  height: 100%;
+  margin: 0 5px;
+  flex-basis: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tree figure{
+  width: 30px; 
+  height: 30px; 
+}
+
+#tree figure img{
+  width: 100%; 
+  height: 100%;
+}
+
+.treeAddUser{
+  cursor: pointer;
+}
+
+/* <AddUser> */
+
+#addUser, #editUser{
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100vh; 
+  background: rgba(0,0,0,.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+#addUserId{
+  text-align: right;
+  margin: 15px 0;
+}
+
+#addUser > div, #editUser > div{
+  background: white; 
+  border-radius: 5px;
+  padding: 15px; 
+  max-height: 500px;
+  overflow-y: scroll;
+  max-width: 350px;
+}
+
+.inputHalfScreen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputHalfScreen input{
+  width: 135px; /*Less than the half specified on index.css*/
+}
+
+#successfulRegistration{
+  width: 350px; 
+}
+
